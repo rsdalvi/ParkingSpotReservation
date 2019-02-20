@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "6eb6f022-d793-411d-a790-da83f0bef331",
+		"name": "ParkingSpotReservation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/users/2/reservations/3",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8080/users/2/reservations/3",
+				"description": "test"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/parkingSpots",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"003\",\n    \"lat\": \"19.08\",\n    \"lon\": \"72.75\"\n}"
+				},
+				"url": "http://localhost:8080/parkingSpots"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/2/reservations",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"2\",\n    \"parkingSpotDTO\": {\"id\":2},\n    \"reservationStartTime\": \"2019-02-20T00:40:00\",\n    \"reservationEndTime\": \"2019-02-20T01:40:00\"\n}"
+				},
+				"url": "http://localhost:8080/users/2/reservations"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/2/reservations",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"3\",\n    \"parkingSpotDTO\": {\"id\":3},\n    \"reservationStartTime\": \"2019-02-20T00:40:00\",\n    \"reservationEndTime\": \"2019-02-20T02:15:00\"\n}"
+				},
+				"url": "http://localhost:8080/users/2/reservations"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"2\",\n    \"name\": \"Suresh\"\n}"
+				},
+				"url": "http://localhost:8080/users"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/1/reservations",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"2\",\n    \"parkingSpot\": {\"id\":1},\n    \"reservationStartTime\": \"2019-02-20T00:40:00\",\n    \"reservationEndTime\": \"2019-02-20T01:40:00\"\n}"
+				},
+				"url": "http://localhost:8080/users/1/reservations"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/1/reservations",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1\",\n    \"name\": \"Ramesh\"\n}"
+				},
+				"url": "http://localhost:8080/users/1/reservations"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/parkingSpots",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"001\",\n    \"lat\": \"19.07283\",\n    \"lon\": \"72.88261\"\n}"
+				},
+				"url": "http://localhost:8080/parkingSpots"
+			},
+			"response": []
+		}
+	]
+}
